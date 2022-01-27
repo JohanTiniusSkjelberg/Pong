@@ -41,3 +41,9 @@ h1 {
     background-color: steelblue;
 }
 h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 50px;} 
+footer{
+    text-align: center;
+    padding-top: 450px;
+    font-size: 16pt;
+    font-family: 'Courier New', Courier, monospace;
+}
