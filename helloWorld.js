@@ -10,6 +10,15 @@ var counter = 0;
 function reset(){
     counter=0;
 }
+function checkBorders(top,left){
+    if (top<=0 || top>=385){
+        return false
+    }
+    if (left<=0 || left>=900-35){
+        return false
+    }
+    return true
+}
 function start(){
     var dia = parseFloat(window.getComputedStyle(ball).getPropertyValue('left'));
     var vert = parseFloat(window.getComputedStyle(ball).getPropertyValue('top'));
@@ -25,7 +34,7 @@ function start(){
         dia-=3
         console.log(hor,'ja')
     }
-    else if ((dia <= 20 && vert > vertPong) && (vert < (170 + vertPong))) {
+    else if ((dia <= 20 && vert > vertPong) && (vert < (155 + vertPong))) {
         hor = !hor
         console.log(222)
         var back = (vert-vertPong)/170
